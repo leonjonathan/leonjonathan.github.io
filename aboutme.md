@@ -4,7 +4,7 @@ title: About me
 subtitle: 
 ---
 
-Born and raised in Miami-Wade County [(Miami Heat reference)](www.heat.com)!
+Born and raised in Miami-Wade County [(Miami Heat reference)](http://www.heat.com)!
 
 ### my family
 
