@@ -23,9 +23,11 @@ description: A place for me to share with you
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "https://leonjonathan.github.io"
-  About Me: "aboutme"
+  Blog: 
+    - Home: "index"
+    - Tags: "tags"
   Projects: "projects"
+  About Me: "aboutme"
   # Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #  - Learn markdown: "http://www.markdowntutorial.com/"
