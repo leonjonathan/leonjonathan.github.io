@@ -22,11 +22,11 @@ description: A place for me to share with you
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-navbar-links:
-  Blog: 
-    - Home: "https://leonjonathan.github.io"
-    - Tags: "tags"
+navbar-links: 
+  Blog: "https://leonjonathan.github.io"
+  Tags: "tags"
   Projects: "projects"
+  Portfolio: "portfolio"
   About Me: "aboutme"
   # Resources:
   #  - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
