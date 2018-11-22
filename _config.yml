@@ -24,7 +24,7 @@ description: A place for me to share with you
 # List of links in the navigation bar
 navbar-links:
   Blog: 
-    - Home: "index"
+    - Home: "https://leonjonathan.github.io"
     - Tags: "tags"
   Projects: "projects"
   About Me: "aboutme"
