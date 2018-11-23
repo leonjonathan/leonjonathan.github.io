@@ -30,7 +30,7 @@ user:~$ ssh-add -l
 #### SSH config file
 
 Create or modify an existing SSH config file. This file should be located at `~/.ssh/config`. Here's an example:
-```shell
+```bash
 # Default Bitbucket user
 Host bitbucket.org
     User git
