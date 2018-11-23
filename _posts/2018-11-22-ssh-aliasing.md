@@ -10,7 +10,7 @@ Here's a quick how-to on handling multiple accounts on github and/or bitbucket, 
 #### Create keys
 
 For each account create a identity/key pair. Can be one pair per repo or one for each account, etc..
-```console
+```sh-session
 user:~$ ssh-keygen -t rsa
 ```
 
@@ -19,7 +19,7 @@ When prompted enter a name specific for the account as in `~/.ssh/id_rsa_github`
 #### Load keys
 
 Load keys into the agent:
-```console
+```sh-session
 user:~$ ssh-add ~/.ssh/id_rsa_github
 ```
 You can check to see if the keys were loaded:
@@ -30,7 +30,7 @@ user:~$ ssh-add -l
 #### SSH config file
 
 Create or modify an existing SSH config file. This file should be located at `~/.ssh/config`. Here's an example:
-```bash
+```shell
 # Default Bitbucket user
 Host bitbucket.org
     User git
@@ -49,7 +49,7 @@ Host github.com
 #### Modify the Git config file
 
 Check the contents of this file with `$ cat ~/.gitconfig`. Add each account with the following commands:
-```console
+```sh-session
 user:~$ git config --global github.name "username"
 user:~$ git config --global github.token xxxx
 ```
@@ -60,14 +60,14 @@ For bitbucket, replace `github` with `user` everywhere.
 
 #### Test that it works!
 
-```console
+```sh-session
 user:~$ ssh -T github.com
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 More info can be found at these sites:
-* [](https://gist.github.com/jexchan/2351996)
-* [](http://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config)
-* [](https://confluence.atlassian.com/pages/viewpage.action?pageId=271943168)
+* <https://gist.github.com/jexchan/2351996>
+* <http://stackoverflow.com/questions/3225862/multiple-github-accounts-ssh-config>
+* <https://confluence.atlassian.com/pages/viewpage.action?pageId=271943168>
 
-Next up, use SSH config to add other ssh aliases that involve port forwarding ([](http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/)).
+Next up, use SSH config to add other ssh aliases that involve port forwarding (<http://nerderati.com/2011/03/simplify-your-life-with-an-ssh-config-file/>).
