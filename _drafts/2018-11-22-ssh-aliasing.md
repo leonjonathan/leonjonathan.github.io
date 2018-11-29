@@ -11,7 +11,7 @@ Here's a quick how-to on handling multiple accounts on github and/or bitbucket, 
 
 For each account create a identity/key pair. Can be one pair per repo or one for each account, etc..
 ```console
-user:~$ ssh-keygen -t rsa
+$ ssh-keygen -t rsa
 ```
 
 When prompted enter a name specific for the account as in `~/.ssh/id_rsa_github`. Use a safe passphrase for each public/private key pair, then upload the public key using web GUI for the respective account.
@@ -20,11 +20,11 @@ When prompted enter a name specific for the account as in `~/.ssh/id_rsa_github`
 
 Load keys into the agent:
 ```console
-user:~$ ssh-add ~/.ssh/id_rsa_github
+$ ssh-add ~/.ssh/id_rsa_github
 ```
 You can check to see if the keys were loaded:
 ```console
-user:~$ ssh-add -l
+$ ssh-add -l
 ```  
 
 #### SSH config file
@@ -50,8 +50,8 @@ Host github.com
 
 Check the contents of this file with `$ cat ~/.gitconfig`. Add each account with the following commands:
 ```console
-user:~$ git config --global github.name "username"
-user:~$ git config --global github.token xxxx
+$ git config --global github.name "username"
+$ git config --global github.token xxxx
 ```
 
 Without the `--global` option, these would create a config file on a per repo basis (presumably, located at `$ REPO_DIRECTORY/.git/config`).
@@ -61,7 +61,7 @@ For bitbucket, replace `github` with `user` everywhere.
 #### Test that it works!
 
 ```console
-user:~$ ssh -T github.com
+$ ssh -T github.com
 Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
