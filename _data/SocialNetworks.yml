@@ -102,6 +102,6 @@ yelp:
   icon: "fab fa-yelp"
   
 kaggle:
-  name: "Yelp"
+  name: "Kaggle"
   baseURL: "https://www.kaggle.com/"
   icon: "fab fa-kaggle"
